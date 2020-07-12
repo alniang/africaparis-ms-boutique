@@ -13,7 +13,7 @@ import reactor.core.publisher.Flux;
 @RequestMapping("/boutique")
 public class VetementController {
 	
-	private WebClient client = WebClient.create("http://localhost:8282");
+	private WebClient client = WebClient.create("https://africaparis-nodejs.herokuapp.com");
 
 	@GetMapping(path = "/boutique-api/public/articles") 
 	public Flux<Vetements> getVetements() {
